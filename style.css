@@ -1,0 +1,516 @@
+@import url("https://fonts.googleapis.com/css2?family=Marcellus+SC:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Marcellus:wght@400&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Pink and Crimson";
+    src: local("Pink and Crimson"),
+        url("./assets/fonts/Pink\ and\ Crimson.otf") format("woff");
+}
+
+.loadingScreen {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.loadingScreen img {
+    object-fit: contain;
+    animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+body {
+
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--color-black);
+    color: #fff;
+    background-color: #000;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+
+:root {
+    --font-zen-dots: "Zen Dots";
+    --font-poppins: "Poppins";
+    --font-marcellus: "Marcellus";
+    --font-marcellus-sc: "Marcellus SC";
+    --font-josefin-sans: "Josefin Sans";
+
+    --font-murisa-alexandra: "Murisa Alexandra";
+    --font-transducer-test: "Transducer Test";
+    --font-gilroy: "Gilroy";
+    --font-pink-and-crimson: "Pink and Crimson";
+    --font-primetime: "PRIMETIME";
+    --font-wild-world: "WILD WORLD";
+    --font-median: "Median";
+
+    --color-black: #000;
+    --color-lightcoral-100: #ff9393;
+    --color-crimson-100: #ff4d59;
+    --color-crimson-200: #ed1c27;
+    --color-salmon: #ff6868;
+    --color-white: #fff;
+    --color-orangered: #ff4b24;
+    --color-palegoldenrod: #fff4bc;
+    --color-red: #ff0000;
+    --color-gray-100: rgba(255, 255, 255, 0.8);
+    --color-darkgray: #989898;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px 0px 20px;
+}
+
+.logo-section {
+    padding-left: 50px;
+}
+
+.logo-section img {
+    width: 100px;
+    height: 40px;
+}
+
+.center-txt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+.center-txt .logoHead {
+    width: 70px;
+    height: 65px;
+}
+
+.contentTxtSvg {
+    width: 50%;
+}
+
+.contentTxtSvg img {
+    width: 100%;
+}
+
+.socialIconSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socialIconSection a img {
+    margin-left: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.socialIconSection a img {
+    width: 36px;
+    height: 36px;
+}
+
+.worldIcon {
+    width: 31px !important;
+    height: 31px !important;
+}
+
+/* .socialIconSection img:nth-child(4){
+    width: 10px;
+    height: 10px;
+}
+.socialIconSection img:nth-child(2){
+    width: 44px;
+    height: 44px;
+}
+.socialIconSection img:nth-child(1){
+    width: 44px;
+    height: 44px;
+} */
+.socialIconSection img:hover {
+    transform: scale(1.1);
+}
+
+/* Header */
+
+
+.HeroSection {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.HeroSection .imgHero {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.twoBoxSection {
+    position: absolute;
+    left: 0;
+    margin-top: 15vh;
+    padding: 0px 35px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+}
+
+.twoBoxSection-centered {
+    display: flex;
+    width: 100%;
+    height: 50vh;
+    gap: 60px;
+}
+
+.ahref {
+    width: 100%;
+}
+
+.ahref-2 {
+    width: 100%;
+}
+
+.tower-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    border: 5px solid #176BB9;
+    padding: 45px 0px;
+    margin-top: 10px;
+    height: 30vh;
+    transition: all 0.3s ease;
+}
+
+.tower-section img {
+    width: 100px;
+}
+
+.tower-section h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Marcellus SC;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 46px;
+    letter-spacing: 10.9px;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+
+.twoBox-1 {
+    width: 100%;
+    height: 100%;
+    border: 5px solid rgba(255, 0, 0, 0.80);
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px 20px 0px;
+    transition: all 0.3s ease;
+}
+
+.twoBox-2 {
+    width: 100%;
+    height: 100%;
+
+    border: 5px solid rgba(254, 241, 0, 0.90);
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 10px 0px 10px 0px; */
+    padding: 20px 0px 20px 0px;
+
+    transition: all 0.3s ease;
+}
+
+.twoBox-inner {
+    padding: 20px 40px 20px 40px;
+    background-color: #000;
+}
+
+.twoBox-1,
+.twoBox-2 h5 {
+    color: #FCFF70;
+    text-align: center;
+    font-family: Pink and Crimson;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+.twoBox-1 h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Pink and Crimson;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin-top: 10px;
+}
+
+.twoBox-2 h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Pink and Crimson;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin-top: 10px;
+}
+
+.twoBox-flags-section {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.twoBox-flags-section img:nth-child(1) {
+    width: 63px;
+    height: 42px;
+}
+
+.twoBox-flags-section img:nth-child(2) {
+    width: 18px;
+    height: 16px;
+    margin: 0px 30px;
+}
+
+.twoBox-flags-section img:nth-child(3) {
+    width: 63px;
+    height: 42px;
+}
+
+.Deploy-btn {
+    border: none;
+    background: #E11313;
+    color: #FFF;
+    text-align: center;
+    font-family: Pink and Crimson;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px;
+    width: 100%;
+    letter-spacing: 2px;
+    display: none;
+
+    cursor: pointer;
+}
+
+
+.twoBox-1:hover .Deploy-btn {
+    display: block;
+}
+
+.twoBox-2:hover .Deploy-btn {
+    display: block;
+}
+
+
+.twoBox-1:hover {
+    background-color: transparent;
+    border: 8px solid #000;
+    transform: scale(1.1);
+}
+
+.twoBox-1:hover .twoBox-inner {
+    background-color: #000;
+    /* padding: 30px 20px; */
+}
+
+
+.grayscale {
+    filter: grayscale(100%);
+}
+
+.grayscale.twoBox-1,
+.twoBox-inner {
+    background-color: transparent;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.grayscale.twoBox-2,
+.twoBox-inner {
+    background-color: transparent;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.grayscale.tower-section {
+    background-color: transparent;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+
+.bg-captured {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    display: none;
+}
+
+.bg-captured img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.twoBox-2:hover {
+    filter: grayscale(0%);
+    background-color: transparent;
+    border: 8px solid #000;
+    transform: scale(1.1);
+}
+
+.twoBox-2:hover .twoBox-inner {
+    background-color: #000;
+}
+
+.tower-section:hover {
+    filter: grayscale(0%);
+    background-color: transparent;
+    border: 8px solid #000;
+    transform: scale(1.05);
+}
+
+/* Responsive Start */
+@media only screen and (max-width: 900px) {
+    .twoBoxSection-centered {
+        gap: 10px;
+    }
+
+    .twoBoxSection {
+        margin-top: 100px;
+        padding: 0px 15px;
+    }
+
+}
+
+@media only screen and (max-width: 750px) {
+    .HeroSection {
+        height: 120vh;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
+    .logo-section {
+        padding-left: 0px;
+    }
+
+    .center-txt {
+        margin-top: 20px;
+        justify-content: flex-end;
+        order: 3;
+        width: 100%;
+    }
+
+    .contentTxtSvg {
+        width: 100%;
+    }
+
+    .logoHead {
+        width: 100%;
+        height: 100%;
+    }
+
+    .twoBoxSection {
+        margin-top: 180px;
+        height: auto;
+    }
+
+    .twoBoxSection-centered {
+        display: block;
+        width: 100%;
+    }
+
+    .twoBox-1,
+    .twoBox-2 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .HeroSection {
+        width: 100%;
+        height: 160vh;
+        overflow: none;
+    }
+
+    .twoBoxSection-centered {
+        height: auto;
+    }
+
+    .tower-section {
+        height: auto;
+    }
+}
+
+/* Responsive End */
