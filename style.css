@@ -138,6 +138,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-right: 2rem;
 }
 
 .socialIconSection a img {
@@ -466,6 +467,10 @@ header {
 
     .logo-section {
         padding-left: 0px;
+    }
+
+    .socialIconSection {
+        margin-right: 0;
     }
 
     .center-txt {
