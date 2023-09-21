@@ -21,22 +21,14 @@
     align-items: center;
     background-color: black;
     overflow: hidden;
-
+    transition: all 0.3s ease;
 }
 
 .loadingScreen img {
+    width: 400px;
+    height: 400px;
     object-fit: contain;
-    animation: rotation 2s infinite linear;
-}
 
-@keyframes rotation {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(359deg);
-    }
 }
 
 body {
@@ -230,10 +222,17 @@ header {
     margin-top: 10px;
     height: 30vh;
     transition: all 0.3s ease;
+    position: relative;
 }
 
 .tower-section img {
     width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.tower-section .redClassic {
+    display: none;
 }
 
 .tower-section h2 {
@@ -437,6 +436,44 @@ header {
     background-color: transparent;
     border: 8px solid #000;
     transform: scale(1.05);
+}
+
+.tower-section .whiteClassic,
+.tower-section .redClassic {
+    margin-top: -3rem;
+}
+
+.tower-section:hover .whiteClassic {
+    display: none;
+}
+
+.tower-section:hover .redClassic {
+    display: block;
+}
+
+.tower-section:hover h2 {
+    color: #FF0000;
+}
+
+.tower-section .deployBtn {
+    position: absolute;
+    right: 10%;
+    border: none;
+    width: auto;
+    background: #E11313;
+    color: #FFF;
+    text-align: center;
+    font-family: Pink and Crimson;
+    font-size: 28px;
+    font-weight: 400;
+    padding: 20px 30px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    display: none;
+}
+
+.tower-section:hover .deployBtn {
+    display: block;
 }
 
 /* Responsive Start */

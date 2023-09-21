@@ -12,23 +12,20 @@
 
 <body>
     <div id="loadingScreen" class="loadingScreen">
-        <img src="./assets/imgs/hetlmet.png" />
+        <img src="./assets/imgs/loading.gif" />
     </div>
     <div id="mainScreen" class='HeroSection'>
         <img src="./assets/imgs/Final B 3.png" alt="" class='imgHero' />
-
         <header>
             <div class='logo-section'>
                 <img src='./assets/logo.png' alt="" />
             </div>
-
             <div class='center-txt'>
                 <img src='./assets/icons/LOGO 5-1 3 78.png' alt="" class='logoHead' />
                 <div class='contentTxtSvg'>
                     <img src='./assets/imgs/Group 9.png' alt="" />
                 </div>
             </div>
-
             <div class='socialIconSection'>
                 <a href="https://discord.gg/worldwar0x"><img src='./assets/icons/image_8-removebg-preview.png'
                         alt="" /></a>
@@ -37,7 +34,6 @@
                         class='worldIcon' /></a>
             </div>
         </header>
-
         <div class='twoBoxSection'>
             <div class='twoBoxSection-centered'>
                 <a href="https://worldwar0x.io/taiwan" class="ahref">
@@ -69,26 +65,27 @@
                     </div>
                 </a>
             </div>
-
-
             <a href="https://worldwar0x.io/classics" class="ahref-2">
                 <div class='tower-section' id="tower-section">
-                    <img src='./assets/imgs/Group 7.png' alt="" />
+                    <img class="whiteClassic" src='./assets/imgs/classic.svg' alt="" />
+                    <img class="redClassic" src='./assets/imgs/classicred.svg' alt="" />
                     <h2>CLASSICS</h2>
+                    <button class="deployBtn">
+                        DEPLOY
+                    </button>
                 </div>
             </a>
         </div>
     </div>
-
-
     <script src="app.js"></script>
     <script>
         window.onload = function () {
             document.getElementById("mainScreen").style.display = 'none'
             setTimeout(function () {
+                document.getElementById("loadingScreen").style.opacity = 0
                 document.getElementById("mainScreen").style.display = 'flex'
                 document.getElementById("loadingScreen").style.display = 'none'
-            }, 2000)
+            }, 5000)
         }
     </script>
 </body>

@@ -10,7 +10,7 @@ const capturedImage = new Image(); // Create an image element to display the cap
 
 // Set up the container and image styles
 capturedBg.classList.add('bg-captured');
-capturedImage.src = imgHero.src;
+capturedImage.src = "./assets/imgs/TaiwanBG.png";
 
 // Append the captured image container to the DOM
 twoBox1.appendChild(capturedBg);
@@ -23,7 +23,7 @@ const capturedImage2 = new Image(); // Create an image element to display the ca
 
 // Set up the container and image styles
 capturedBg2.classList.add('bg-captured');
-capturedImage2.src = imgHero.src;
+capturedImage2.src = "./assets/imgs/UkraineBG.png";
 
 // Append the captured image container to the DOM
 twoBox2.appendChild(capturedBg2);
