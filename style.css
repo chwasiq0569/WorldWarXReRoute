@@ -432,9 +432,9 @@ header {
 
 .tower-section:hover {
     filter: grayscale(0%);
-    background-color: transparent;
     border: 8px solid #000;
-    transform: scale(1.05);
+    transform: scale(1.08);
+    margin-bottom: -1rem;
 }
 
 .tower-section .whiteClassic,

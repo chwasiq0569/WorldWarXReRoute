@@ -39,7 +39,7 @@ capturedImage3.src = imgHero.src;
 
 // Append the captured image container to the DOM
 tower.appendChild(capturedBg3);
-capturedBg3.appendChild(capturedImage3);
+// capturedBg3.appendChild(capturedImage3);
 
 
 
