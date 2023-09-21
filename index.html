@@ -80,14 +80,13 @@
     <script src="app.js"></script>
     <script>
         window.onload = function () {
-            document.getElementById("mainScreen").style.display = 'none'
             document.body.overflow = 'hidden'
+            document.getElementById("mainScreen").style.display = 'none'
             setTimeout(function () {
-                document.getElementById("loadingScreen").style.opacity = 0
+                // document.getElementById("loadingScreen").style.opacity = 0
                 document.getElementById("mainScreen").style.display = 'flex'
                 document.getElementById("loadingScreen").style.display = 'none'
                 document.body.overflow = 'auto'
-
             }, 5000)
         }
     </script>
