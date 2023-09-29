@@ -77,13 +77,12 @@
             </a>
         </div>
     </div>
-    <script src="app.js"></script>
-    <script>
+    <script async defer src="app.js"></script>
+    <script async defer>
         window.onload = function () {
             document.body.overflow = 'hidden'
             document.getElementById("mainScreen").style.display = 'none'
             setTimeout(function () {
-                // document.getElementById("loadingScreen").style.opacity = 0
                 document.getElementById("mainScreen").style.display = 'flex'
                 document.getElementById("loadingScreen").style.display = 'none'
                 document.body.overflow = 'auto'
